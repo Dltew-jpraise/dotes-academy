@@ -88,12 +88,10 @@ section{padding:96px 24px;position:relative}
 .about-section{background:var(--dark)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:16px}
 @media(max-width:640px){.about-grid{grid-template-columns:1fr;gap:40px}}
-.about-visual{background:linear-gradient(145deg,var(--card),#0E0E14);border:1px solid var(--border);border-radius:16px;padding:40px 32px;text-align:center}
-.about-logo{font-family:'Bebas Neue',sans-serif;font-size:56px;color:var(--gold);letter-spacing:6px;display:block;margin-bottom:8px}
+.about-photo{width:100%;border-radius:16px;object-fit:cover;max-height:480px;border:1px solid var(--border)}
+.about-photo-wrap{position:relative}
+.about-photo-wrap::after{content:'';position:absolute;inset:0;border-radius:16px;background:linear-gradient(to top,rgba(7,7,10,0.4),transparent);pointer-events:none}
 .about-tagline{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gray);margin-bottom:32px}
-.about-stat-row{display:flex;justify-content:space-around;border-top:1px solid var(--border);padding-top:24px;gap:16px}
-.about-stat-num{font-family:'Bebas Neue',sans-serif;font-size:36px;color:var(--orange);display:block;line-height:1}
-.about-stat-label{font-size:11px;color:var(--gray);letter-spacing:1px;text-transform:uppercase}
 .about-quote{background:rgba(255,92,26,0.06);border-left:3px solid var(--orange);padding:20px 24px;border-radius:0 8px 8px 0;font-size:16px;color:var(--white);font-style:italic;line-height:1.65;margin-top:24px}
 footer{background:var(--black);border-top:1px solid var(--border);padding:56px 24px 40px;text-align:center}
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:6px;color:var(--gold);display:block;margin-bottom:4px}
@@ -192,20 +190,16 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:56px 2
 <section class="about-section" id="about">
   <div class="container-wide">
     <div class="about-grid">
-      <div class="about-visual reveal">
-        <span class="about-logo">DLTEW</span>
-        <div class="about-tagline">Do Less · Think · Earn Wealth</div>
-        <div class="about-stat-row">
-          <div><span class="about-stat-num">$47</span><span class="about-stat-label">First Sale</span></div>
-          <div><span class="about-stat-num">TikTok</span><span class="about-stat-label">Platform</span></div>
-          <div><span class="about-stat-num">1</span><span class="about-stat-label">Live. That's all.</span></div>
-        </div>
+      <div class="about-photo-wrap reveal">
+        <img src="IMG_1085.HEIC" alt="JPraise" class="about-photo"/>
       </div>
-      <div class="about-text reveal">
+      <div class="reveal">
         <span class="tag">Who Is JPraise?</span>
-        <h2 class="section-title" style="font-size:clamp(36px,6vw,56px)">One step ahead of you.</h2>
-        <p class="section-body">I'm not a guru claiming six figures. I'm a 21-year-old who started from zero, figured out the three steps, and made my first sale on TikTok Live.</p>
-        <div class="about-quote">"You don't need to be perfect. You need to be consistent and clear. Your first sale is closer than you think."</div>
+        <h2 class="section-title" style="font-size:clamp(36px,6vw,56px)">I was just<br/>like you.</h2>
+        <p class="section-body">I grew up in Brooklyn, New York — the oldest child in a single mom household. For years I lived paycheck to paycheck. Work. Pay bills. Sleep. Repeat. No time for family. No freedom. Just survival.</p>
+        <p class="section-body" style="margin-top:14px;">At 21 I knew the Lord was calling me to something more. I wanted to break generational cycles, build real wealth for my family, and create a legacy — not just a job. So I started building.</p>
+        <p class="section-body" style="margin-top:14px;">I started a business at 16. I've learned more since then than I ever could have imagined. And now I'm using everything I know to help people like me — people who are tired of surviving and ready to start building.</p>
+        <div class="about-quote">"I don't need to be far ahead of you. I just need to be one step ahead — and show you the way."</div>
       </div>
     </div>
   </div>
