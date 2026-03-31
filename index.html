@@ -47,6 +47,9 @@ section{padding:96px 24px;position:relative}
 .fw-title{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--white);margin-bottom:12px}
 .fw-body{font-size:15px;color:var(--gray);line-height:1.65}
 .fw-body strong{color:var(--white)}
+.verse-section{background:linear-gradient(135deg,rgba(212,168,67,0.08),rgba(255,92,26,0.06));border-top:1px solid rgba(212,168,67,0.15);border-bottom:1px solid rgba(212,168,67,0.15);padding:80px 24px;text-align:center}
+.verse-text{font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,5vw,48px);color:var(--gold-light);line-height:1.2;max-width:800px;margin:0 auto 16px}
+.verse-ref{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);opacity:0.7}
 .products-section{background:var(--black)}
 .products-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:56px}
 @media(max-width:640px){.products-grid{grid-template-columns:1fr}}
@@ -70,29 +73,38 @@ section{padding:96px 24px;position:relative}
 .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
 @media(max-width:760px){.testimonials-grid{grid-template-columns:1fr}}
 .testimonial-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:32px 28px}
-.testimonial-card.placeholder{border:1px dashed rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;min-height:200px;opacity:0.4}
-.placeholder-text{font-size:13px;color:var(--gray);text-align:center;letter-spacing:1px;text-transform:uppercase}
 .quote-mark{font-family:'Bebas Neue',sans-serif;font-size:64px;color:var(--orange);line-height:0.6;margin-bottom:16px;opacity:0.5;display:block}
 .testimonial-text{font-size:15px;color:var(--white);line-height:1.7;margin-bottom:24px;font-style:italic}
 .testimonial-author{display:flex;align-items:center;gap:12px}
-.author-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--pink));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;color:white;flex-shrink:0}
+.author-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--pink));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;color:white;flex-shrink:0}
+.author-avatar img{width:44px;height:44px;border-radius:50%;object-fit:cover}
 .author-name{font-weight:700;font-size:14px;color:var(--white);display:block}
 .author-label{font-size:12px;color:var(--gray);display:block;margin-top:2px}
-.challenge-section{background:var(--black);text-align:center}
+.pain-section{background:var(--black)}
+.pain-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px}
+@media(max-width:560px){.pain-grid{grid-template-columns:1fr}}
+.pain-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px}
+.pain-emoji{font-size:28px;margin-bottom:12px;display:block}
+.pain-title{font-weight:700;font-size:16px;color:var(--white);margin-bottom:6px}
+.pain-body{font-size:14px;color:var(--gray);line-height:1.6}
+.challenge-section{background:var(--dark);text-align:center}
 .challenge-banner{background:linear-gradient(135deg,rgba(255,92,26,0.1),rgba(255,56,117,0.08));border:1px solid rgba(255,92,26,0.2);border-radius:20px;padding:56px 40px;max-width:680px;margin:40px auto 0;position:relative;overflow:hidden}
 .challenge-tag{display:inline-block;background:rgba(255,92,26,0.15);color:var(--orange);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:6px 16px;border-radius:100px;margin-bottom:24px}
 .challenge-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(44px,9vw,72px);line-height:0.95;margin-bottom:16px}
 .challenge-title em{font-style:normal;color:var(--orange)}
 .challenge-body{font-size:16px;color:var(--gray);line-height:1.7;margin-bottom:32px}
 .coming-soon-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(18,232,122,0.08);border:1px solid rgba(18,232,122,0.2);color:var(--green);font-size:13px;font-weight:700;padding:10px 24px;border-radius:100px}
-.about-section{background:var(--dark)}
+.about-section{background:var(--black)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:16px}
 @media(max-width:640px){.about-grid{grid-template-columns:1fr;gap:40px}}
-.about-photo{width:100%;border-radius:16px;object-fit:cover;max-height:480px;border:1px solid var(--border)}
+.about-photo{width:100%;border-radius:16px;object-fit:cover;max-height:500px;border:1px solid var(--border)}
 .about-photo-wrap{position:relative}
-.about-photo-wrap::after{content:'';position:absolute;inset:0;border-radius:16px;background:linear-gradient(to top,rgba(7,7,10,0.4),transparent);pointer-events:none}
-.about-tagline{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gray);margin-bottom:32px}
+.about-photo-wrap::after{content:'';position:absolute;inset:0;border-radius:16px;background:linear-gradient(to top,rgba(7,7,10,0.3),transparent);pointer-events:none}
 .about-quote{background:rgba(255,92,26,0.06);border-left:3px solid var(--orange);padding:20px 24px;border-radius:0 8px 8px 0;font-size:16px;color:var(--white);font-style:italic;line-height:1.65;margin-top:24px}
+.final-cta{background:linear-gradient(135deg,rgba(255,92,26,0.12),rgba(255,56,117,0.08));border-top:1px solid rgba(255,92,26,0.15);padding:96px 24px;text-align:center}
+.final-cta h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,10vw,96px);line-height:0.9;margin-bottom:20px}
+.final-cta h2 em{font-style:normal;color:var(--orange)}
+.final-cta p{font-size:18px;color:var(--gray);max-width:480px;margin:0 auto 40px}
 footer{background:var(--black);border-top:1px solid var(--border);padding:56px 24px 40px;text-align:center}
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:6px;color:var(--gold);display:block;margin-bottom:4px}
 .footer-tagline{font-size:13px;color:var(--gray);letter-spacing:2px;text-transform:uppercase;margin-bottom:28px}
@@ -108,59 +120,83 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:56px 2
   <a href="#" class="nav-logo">DLTEW</a>
   <a href="https://stan.store/JPraisemarketing" class="nav-cta" target="_blank">Start Here — $47</a>
 </nav>
+
 <section class="hero">
   <div class="hero-glow"></div>
   <div class="hero-eyebrow">🔥 <span style="color:var(--white)">DLTEW Academy</span> · @JPraiseMarketing</div>
   <h1>DO LESS.<br/><em>EARN MORE.</em></h1>
-  <p class="hero-sub">Stop overcomplicating it. <strong>Find your niche. Build your offer. Market it.</strong> Three steps is all it takes.</p>
+  <p class="hero-sub">Stop overcomplicating it. <strong>Find your niche. Build your offer. Market it.</strong> Three steps is all it takes to start making money online.</p>
   <div class="hero-actions">
     <a href="https://stan.store/JPraisemarketing" class="btn-primary" target="_blank">Start Here — $47</a>
     <a href="#freebie" class="btn-secondary">Grab the free starter kit first →</a>
     <p class="hero-note"><span>✓ Instant access</span> · No experience needed · Start today</p>
   </div>
 </section>
+
 <div class="stats-bar">
   <div class="stat"><span class="stat-num">3</span><span class="stat-label">Steps to your first sale</span></div>
   <div class="stat"><span class="stat-num">$47</span><span class="stat-label">One time investment</span></div>
   <div class="stat"><span class="stat-num">7</span><span class="stat-label">Days to first sale</span></div>
   <div class="stat"><span class="stat-num">0</span><span class="stat-label">Fluff. Zero.</span></div>
 </div>
+
+<div class="verse-section">
+  <p class="verse-text reveal">"For I know the plans I have for you, declares the Lord — plans to prosper you and not to harm you, plans to give you hope and a future."</p>
+  <p class="verse-ref reveal">Jeremiah 29:11</p>
+</div>
+
 <section class="framework-section" id="framework">
   <div class="container-wide">
     <span class="tag reveal">The DLTEW Method</span>
     <h2 class="section-title reveal">Everyone's overcomplicating it.</h2>
-    <p class="section-body reveal">You don't need 10 courses and a perfect strategy. You need <strong>three things.</strong></p>
+    <p class="section-body reveal">You don't need 10 courses, 5 tools, and a perfect strategy. You need <strong>three things.</strong> That's it.</p>
     <div class="framework-grid">
-      <div class="framework-card reveal"><span class="fw-step">01</span><div class="fw-title">Find Your Niche</div><div class="fw-body">Know <strong>exactly who you're talking to.</strong> When you know your audience, you know who you can serve.</div></div>
-      <div class="framework-card reveal"><span class="fw-step">02</span><div class="fw-title">Build Your Offer</div><div class="fw-body">Your offer is a <strong>solution to a real problem.</strong> People pay for solutions — not just products.</div></div>
-      <div class="framework-card reveal"><span class="fw-step">03</span><div class="fw-title">Market It Online</div><div class="fw-body"><strong>Promote so people know where to buy.</strong> Content, DMs, lives — pick one and stay consistent.</div></div>
+      <div class="framework-card reveal"><span class="fw-step">01</span><div class="fw-title">Find Your Niche</div><div class="fw-body">Know <strong>exactly who you're talking to.</strong> When you know your audience, you know who you can serve. Stop trying to talk to everyone.</div></div>
+      <div class="framework-card reveal"><span class="fw-step">02</span><div class="fw-title">Build Your Offer</div><div class="fw-body">Your offer is a <strong>solution to a real problem.</strong> People pay for solutions. Be the answer to their pain point.</div></div>
+      <div class="framework-card reveal"><span class="fw-step">03</span><div class="fw-title">Market It Online</div><div class="fw-body"><strong>Promote so people know where to buy.</strong> Content, DMs, lives, email — pick one, stay consistent, show up.</div></div>
     </div>
   </div>
 </section>
+
+<section class="pain-section">
+  <div class="container-wide">
+    <span class="tag reveal">Does this sound like you?</span>
+    <h2 class="section-title reveal">You're stuck.<br/>Let's fix that.</h2>
+    <div class="pain-grid">
+      <div class="pain-card reveal"><span class="pain-emoji">😤</span><div class="pain-title">You set everything up but have zero sales</div><div class="pain-body">You did the work but nothing is moving. You don't know why and it's draining you.</div></div>
+      <div class="pain-card reveal"><span class="pain-emoji">🧠</span><div class="pain-title">You're overthinking everything</div><div class="pain-body">Too many ideas, too many options. You see opportunity everywhere but can't focus on one thing.</div></div>
+      <div class="pain-card reveal"><span class="pain-emoji">📱</span><div class="pain-title">You post but nobody buys</div><div class="pain-body">Views but no sales. Your content isn't converting and you don't know what to change.</div></div>
+      <div class="pain-card reveal"><span class="pain-emoji">🚪</span><div class="pain-title">You keep starting and stopping</div><div class="pain-body">You get excited, start building, then quit. The cycle keeps repeating and you're tired of it.</div></div>
+    </div>
+  </div>
+</section>
+
 <section class="products-section" id="freebie">
   <div class="container-wide">
     <span class="tag reveal">What We Offer</span>
     <h2 class="section-title reveal">Pick your starting point.</h2>
+    <p class="section-body reveal">Start with the free kit. When you're ready to go all in — the full playbook has everything.</p>
     <div class="products-grid">
       <div class="product-card reveal">
         <span class="product-badge badge-free">Free Download</span>
         <div class="product-title">Your First Sale Starter Kit</div>
-        <div class="product-desc">Three pages of real actionable strategy. Get your offer clear, learn the content formula, and follow the checklist.</div>
+        <div class="product-desc">Three pages of real actionable strategy. Get your offer clear, learn the content formula, and follow the checklist to your first sale.</div>
         <ul class="product-includes"><li>Offer clarity — the one sentence formula</li><li>Content that converts — hook, pain, solution, CTA</li><li>First sale checklist — 12 steps, execute today</li></ul>
-        <div class="product-price"><span></span>FREE <small>— no strings</small></div>
+        <div class="product-price">FREE <small>— no strings</small></div>
         <a href="https://stan.store/JPraisemarketing" class="btn-card btn-card-secondary" target="_blank">Grab the Free Kit →</a>
       </div>
       <div class="product-card featured reveal">
         <span class="product-badge badge-paid">Best Value</span>
         <div class="product-title">Your First Sale Playbook</div>
         <div class="product-desc">The full step-by-step guide written by someone who just made their first sale on TikTok Live. Raw, real, built for beginners.</div>
-        <ul class="product-includes"><li>Why you haven't made a sale yet — the real breakdown</li><li>Offer formula + content formula with real examples</li><li>How to ask for the sale without being pushy</li><li>DM follow-up strategy</li><li>Complete First Sale Checklist</li><li>Access to DLTEW community on Telegram</li></ul>
+        <ul class="product-includes"><li>Why you haven't made a sale yet — the real breakdown</li><li>Offer formula + content formula with real examples</li><li>How to ask for the sale without being pushy</li><li>DM follow-up strategy — close in the comments</li><li>Complete First Sale Checklist — execute same day</li><li>Access to DLTEW community on Telegram</li></ul>
         <div class="product-price"><span>$</span>47 <small>— one time</small></div>
         <a href="https://stan.store/JPraisemarketing" class="btn-card btn-card-primary" target="_blank">Start Here — $47</a>
       </div>
     </div>
   </div>
 </section>
+
 <section class="testimonials-section" id="testimonials">
   <div class="container-wide">
     <span class="tag reveal">Real People. Real Results.</span>
@@ -168,25 +204,44 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:56px 2
     <div class="testimonials-grid">
       <div class="testimonial-card reveal">
         <span class="quote-mark">"</span>
-        <p class="testimonial-text">I was really motivated by JPraise. I loved the way she explained the pathway to her marketing skills and how she showed up and was inspiring. She helped to guide me in the direction I needed to go in marketing my page and I truly appreciated it. If you are considering working with her you won't go wrong.</p>
-        <div class="testimonial-author"><div class="author-avatar">C</div><div><span class="author-name">Community Member</span><span class="author-label">DLTEW Academy Student</span></div></div>
+        <p class="testimonial-text">I was really motivated by JPraise. She explained the pathway to marketing, showed up inspiring, and guided me in the direction I needed. If you are considering working with her — you won't go wrong.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">J</div>
+          <div><span class="author-name">I Am Jadie</span><span class="author-label">DLTEW Academy Student</span></div>
+        </div>
       </div>
-      <div class="testimonial-card placeholder reveal"><div class="placeholder-text">Testimonial<br/>coming soon</div></div>
-      <div class="testimonial-card placeholder reveal"><div class="placeholder-text">Testimonial<br/>coming soon</div></div>
+      <div class="testimonial-card reveal">
+        <span class="quote-mark">"</span>
+        <p class="testimonial-text">When I was feeling lost, JPraise was patient and organized. She guided me step by step and always tied everything back to glorifying God. That focus kept me grounded. Listen to JPraise — be structured, be patient, keep your values at the center.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">N</div>
+          <div><span class="author-name">Noelle_Raynae</span><span class="author-label">DLTEW Academy Student</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <span class="quote-mark">"</span>
+        <p class="testimonial-text">JPraise puts God first and she is truly gifted. She helps 9-5ers start a business without overthinking. Go to JPraiseMarketing — she gonna get you right.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">K</div>
+          <div><span class="author-name">Kesha</span><span class="author-label">DLTEW Academy Student</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 <section class="challenge-section" id="challenge">
   <div class="container">
     <span class="tag reveal">Coming Soon</span>
     <div class="challenge-banner reveal">
       <div class="challenge-tag">April Challenge</div>
       <h2 class="challenge-title">FIRST SALE<br/><em>IN 7 DAYS</em></h2>
-      <p class="challenge-body">A live TikTok challenge walking you step by step from zero to your first sale in one week.</p>
+      <p class="challenge-body">A live TikTok challenge walking you step by step from zero to your first sale in one week. Seven days. One live per day. Your first sale by the end.</p>
       <div class="coming-soon-pill">🟢 Launching April 1st — Stay tuned</div>
     </div>
   </div>
 </section>
+
 <section class="about-section" id="about">
   <div class="container-wide">
     <div class="about-grid">
@@ -198,12 +253,21 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:56px 2
         <h2 class="section-title" style="font-size:clamp(36px,6vw,56px)">I was just<br/>like you.</h2>
         <p class="section-body">I grew up in Brooklyn, New York — the oldest child in a single mom household. For years I lived paycheck to paycheck. Work. Pay bills. Sleep. Repeat. No time for family. No freedom. Just survival.</p>
         <p class="section-body" style="margin-top:14px;">At 21 I knew the Lord was calling me to something more. I wanted to break generational cycles, build real wealth for my family, and create a legacy — not just a job. So I started building.</p>
-        <p class="section-body" style="margin-top:14px;">I started a business at 16. I've learned more since then than I ever could have imagined. And now I'm using everything I know to help people like me — people who are tired of surviving and ready to start building.</p>
+        <p class="section-body" style="margin-top:14px;">I started a business at 16. I've learned more since then than I ever imagined. And now I use everything I know to help people like me — tired of surviving and ready to start building.</p>
         <div class="about-quote">"I don't need to be far ahead of you. I just need to be one step ahead — and show you the way."</div>
       </div>
     </div>
   </div>
 </section>
+
+<div class="final-cta">
+  <div class="container">
+    <h2 class="reveal">YOUR FIRST SALE<br/><em>STARTS HERE.</em></h2>
+    <p class="reveal">Stop waiting for the perfect moment. You have everything you need. Let's go.</p>
+    <a href="https://stan.store/JPraisemarketing" class="btn-primary reveal" target="_blank">Start Here — $47</a>
+  </div>
+</div>
+
 <footer>
   <span class="footer-logo">DLTEW</span>
   <div class="footer-tagline">Do Less · Think · Earn Wealth</div>
